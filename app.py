@@ -10,10 +10,10 @@ import sys
 app = Flask(__name__)
    
 app.secret_key = 'abcd2123445'  
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = ''
-app.config['MYSQL_DB'] = 'memek'
+app.config['MYSQL_HOST'] = 'lmsdb.mysql.database.azure.com'
+app.config['MYSQL_USER'] = 'lmsdb'
+app.config['MYSQL_PASSWORD'] = 'lms-db1234'
+app.config['MYSQL_DB'] = 'library-system'
   
 mysql = MySQL(app)
   
